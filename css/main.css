@@ -1,3 +1,19 @@
 body {
 	color: grey; 
 }
+
+.main-text {
+	color: red;
+}
+
+#text-in-p {
+	color: blue; 
+}
+
+div b, div i {
+	color: orange; 
+}
+
+/* div, .name-class, #id, div p {
+	color: brown; 
+} */ 
