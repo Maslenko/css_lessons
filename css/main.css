@@ -20,6 +20,49 @@ div b, div i {
 
 /* Псевдоклассы и псевдоэлементы */
 
+/*p:last-of-type  {
+	text-decoration: line-through; 
+}*/
+
+p.text:not(empty) {
+	color: orange;
+}
+
+p.text:not(empty)::after {
+	content: ' Этот элемент не выделяется курсором.';
+	color: black; 	
+}
+
+p:empty::after {
+	content: 'Этот элемент присоединëн к пустому тегу <p>. Его тоже нельзя выделить.';
+	/*content: attr(title);*/
+	color: black;
+}
+
+
+
+#some_id {
+	color: black; 
+}
+
+#some_id::before {
+	content: 'Эту надпись выделить не получится мышкой. ';
+	color: red; 
+}
+
+#some_id::after {
+	content: ' Эту надпись тоже выделить нельзя курсором.';
+	color: blue;
+}
+
+p.main_link::first-letter {
+	color: green;
+}
+
+p.main_link::first-line {
+	color: black;
+}
+
 .main_link {
 	color: red;
 	text-decoration: none;
@@ -34,4 +77,19 @@ div b, div i {
 
 .main_link:active {
 	text-decoration: line-through;
+	size: 500px;
 }
+
+/*.main_link:visited {
+	color: grey; 
+}*/
+
+input {
+	width: 300px;
+	color: blue; 
+}
+
+input:focus {
+	color: red;
+}
+
