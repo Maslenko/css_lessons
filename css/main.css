@@ -1,5 +1,10 @@
 body {
+	background-color: #f2f0f0;
 	color: grey; 
+	background-image: url('https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 35%; /*background-size: cover;*/ 
 }
 
 .main-text {
